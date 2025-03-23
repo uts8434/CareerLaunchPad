@@ -19,7 +19,7 @@ function Feed({ profileImage, username, postTime, description, postImage }) {
 
   return (
     <div className="border mb-3 rounded-3 p-3 bg-white shadow-sm">
-      {/* Header Section */}
+
       <div className="d-flex align-items-center mb-2">
         <img
           src={profileImage}
@@ -36,19 +36,16 @@ function Feed({ profileImage, username, postTime, description, postImage }) {
         </div>
       </div>
 
-      {/* Post Description */}
       <div className="mb-2">
         <p className="mb-2">{description}</p>
       </div>
 
-      {/* Post Image */}
       {postImage && (
         <div className="body">
           <img className="rounded-3 img-fluid" src={postImage} alt="Post" />
         </div>
       )}
 
-      {/* Action Buttons (Like, Comment, Repost, Send) */}
       <div className="d-flex justify-content-around p-2 border-top mt-2">
         <div
           className={`d-flex align-items-center gap-2 ${
