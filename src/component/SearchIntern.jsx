@@ -6,7 +6,7 @@ function SearchIntern() {
   const [inputValue, setInputValue] = useState("");
 
   const filterOptions = {
-    "Open for opportunity": ["Yes", "No"],
+    opportunity: ["Yes", "No"],
     location: ["Below 5km", "Between 15-20km", "Pan India"],
     company: ["All", "MNC", "Startups"],
     field: [
@@ -71,6 +71,7 @@ function SearchIntern() {
       setFilters((prev) => ({
         ...prev,
         [selectedValue]: inputValue,
+        
       }));
       setInputValue("");
     }
@@ -109,7 +110,7 @@ function SearchIntern() {
             </option>
             {Object.keys(filterOptions).map((option) => (
               <option key={option} value={option}>
-                {option.toUpperCase()}
+                {option.charAt(0).toUpperCase() + option.slice(1)}
               </option>
             ))}
           </select>
@@ -194,6 +195,7 @@ function SearchIntern() {
       <div className="mt-4  ">
         <h3 className="text-center pt-4 fw-bold">Student Profiles</h3>
         <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 pt-2 pb-5">
+            
           {filteredStudents.length > 0 ? (
             filteredStudents.map((student, index) => (
               <div
