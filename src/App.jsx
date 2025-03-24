@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Course from "./component/Course";
 import Feed from "./component/Feed";
 import SearchBycategory from "./component/SearchBycategory";
-import CarouseImg from "./component/carouseImg";
+import CarouselContent from "./component/CarouselContent";
 
 function App() {
   const [activeFeed, setActiveFeed] = useState("all");
@@ -215,7 +215,7 @@ function App() {
   });
   return (
     <>
-      <CarouseImg />
+      <CarouselContent />
 
       <SearchBycategory />
 
