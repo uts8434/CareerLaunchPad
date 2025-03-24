@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function CarouseImg() {
   return (
-<>
-<div
+    <>
+      <div
         id="carouselExampleFade"
         className="carousel carousel-fade slide px-2    "
         data-bs-ride="carousel"
-       
       >
         <div className="carousel-inner rounded-4">
           <div className="active carousel-item">
@@ -67,8 +66,8 @@ function CarouseImg() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-</>
-  )
+    </>
+  );
 }
 
 export default CarouseImg;

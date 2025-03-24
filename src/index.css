@@ -9,3 +9,8 @@ object-fit:cover;
 
 
 
+.feed-tab:hover {
+    background-color: #004080;
+    color: white;
+}
+  
